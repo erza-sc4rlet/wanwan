@@ -13,6 +13,10 @@ class employeecontroller extends Controller
         $employees = employee::get();
 
         return view ('employee.index', compact('employees'));
+
+        $employees = employee::get();
+
+        return view ('employee.index', compact('employees'));
     }
 
     public function create()
